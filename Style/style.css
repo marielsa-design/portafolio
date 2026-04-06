@@ -1,4 +1,9 @@
-/* Se aplican estilos CSS: colores, fuentes, márgenes/padding, hover en enlaces y algún borde o sombra. */
+/* Aplicación de estilos (styles.css):
+Aplica una tipografía legible y colores de fondo/texto que diferencien las secciones.
+Usa display, margin y padding para organizar los elementos con el modelo de caja.
+Agrega un hover a los enlaces para que cambien de color al pasar el mouse.
+Opcional: incluye una sombra en las imágenes y un borde redondeado.
+El límite es tu imaginación, si deseas agregar una nueva sección, un nuevo estilo, no hay ningún problema. */
 
 body {
     background-color: blanchedalmond;
