@@ -1,0 +1,58 @@
+<!-- </head>
+
+<body>
+    <header>
+        <h1>Marielsa Parra</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <body>
+        <main>
+            <h2>Hello, my name is Marielsa Parra</h2>
+            <p Card>I am a graphic designer with a strong interest in combining creativity and technology.
+                Currently, I am learning programming and development tools to create digital and visual projects.
+                <br>
+                <br>
+                My goal is to develop skills in animation, digital art, and creative web development.
+            </p>
+        </main>
+        <br>
+
+        <section>
+            <h2>Blog</h2>
+            <p Card> description
+            </p>
+        </section>
+        <br>
+        <section>
+            <h2>Projects</h2>
+        </section>
+        <p Card> description
+            <br>
+            <br>
+            <a href="mascotas.html">Pet Shop</a>
+        </p>
+        <br>
+
+        <footer>
+            <h2>Contact me</h2><br>
+            <a href="https://github.com/marielsa-design" </a>
+                <img src="img/github.png" alt="GitHub" width="50px>
+            <br>
+            <br>
+            <a href=" index.html"><br><br>Back to home</a>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html> -->
