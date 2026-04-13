@@ -19,8 +19,13 @@
 
     <link rel="stylesheet" href="Style/style.css">
 
+    <!-- Titulo de la página del portafolio personal -->
+
     <title>Marielsa Parra</title>
+    <link rel="icon" type="image/png" href="img/tiger.png">
 </head>
+
+<!-- Menu de navegación de portafolio personal -->
 
 <body>
 
@@ -28,45 +33,52 @@
         <a href="/" class="logo">Marielsa Design</a>
 
         <ul class="nav-links">
-            <li><a href="#inicio">Sobre mí</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="img/foto.jpg" alt="">
+    <!-- Section de Sobre Mí -->
 
-            <div class="info-box">
+    <section id="sobre-mi" class="sobre-mi">
 
-                <div class="text">
-                    <h1>Hola!</h1>
-                    <h2>Soy Marielsa Parra</h2>
-                    <span>Diseñadora gráfica e ilustradora apasionada por la creatividad y la tecnología. En formación
-                        en programación y desarrollo web, con interés en animación y arte digital.</span>
+        <div class="sobre-mi-container">
+
+            <img src="img/foto.jpg" alt="Marielsa Parra" class="sobre-mi-img">
+
+            <div class="sobre-mi-texto">
+                <p class="sobre-mi-saludo">Hola!</p>
+                <h1 class="sobre-mi-nombre">Soy Marielsa Parra</h1>
+                <p class="sobre-mi-descripcion">Diseñadora gráfica e ilustradora apasionada por la creatividad y la
+                    tecnología. En formación en programación y desarrollo web, con interés en animación y arte digital.
+                </p>
+
+                <div class="sobre-mi-botones">
+                    <a href="cv/marielsa-cv.pdf" download class="btn-cv">Descargar CV</a>
+                    <a href="#contacto" class="btn-contacto">Contacto</a>
                 </div>
-                <br>
 
-                <div class="btn-group">
-                    <div class="btn">Descargar CV</div><br>
-                    <div class="btn">Contacto</div>
-                </div>
-                <br>
-                <div class="socials">
+                <div class="sobre-mi-redes">
                     <a href="https://github.com/marielsa-design" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/marielsa-parra/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://linkedin.com/in/marielsa-parra/" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://www.behance.net/marielsamilagro" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-behance"></i>
+                    </a>
                 </div>
-
             </div>
+
         </div>
+
     </section>
+
+    <!-- seccion de experiencia laboral -->
+
     <section id="experiencia" class="experiencia">
 
         <h2 class="section-title">Experiencia Laboral</h2>
@@ -82,41 +94,42 @@
                 </div>
 
                 <div class="timeline-line">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                3 meses
-                            </p>
-                            <h4>Práctica de Diseño Gráfico</h4>
-                            <p>Centro de Formación e Investigación "Padre Joaquín Fe y Alegría". Folletos, Diseño
-                                editorial, Infografía.</p>
-                        </div>
-                    </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-card">
                             <p class="timeline-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                5 meses
-                            </p>
-                            <h4>Práctica de Diseño Gráfico</h4>
-                            <p>Crea S.A. Publicidad. Diseño de Redes Sociales y Retoque digital.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                7 meses
+                                7 meses | Team Toon Studio
                             </p>
                             <h4>Práctica de Animación 2D</h4>
                             <p>Ilustración digital, Animación 2D, Storyboard, Diseño de escenario, Creación de
-                                personajes y Toon Boom Harmony.</p>
+                                personajes y Manejo de Toon Boom Harmony.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <p class="timeline-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                5 meses | Crea S.A. Publicidad
+                            </p>
+                            <h4>Práctica de Diseño Gráfico</h4>
+                            <p>Diseño de Redes Sociales y Retoque digital.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <p class="timeline-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                3 meses | Centro de Formación e Investigación "Padre Joaquín Fe y Alegría"
+                            </p>
+                            <h4>Práctica de Diseño Gráfico</h4>
+                            <p>Folletos, Diseño
+                                editorial, Infografía y Diseño de portada.</p>
                         </div>
                     </div>
 
@@ -138,11 +151,13 @@
                         <div class="timeline-card">
                             <p class="timeline-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2 años
+                                Actualmente | Freelance
                             </p>
-                            <h4>Diseño Gráfico</h4>
-                            <p>Corporación Universitaria Americana · Jornada parcial. Diseño de Redes Sociales,
-                                Afiche, Pendones, Banner web, Retoque digital y Medios impresos.</p>
+                            <h4>Diseñadora Gráfica e Ilustradora</h4>
+                            <p>Desarrollo de proyectos de diseño gráfico e ilustración para emprendedores y marcas
+                                personales. Especializada en Diseño de presentación, Ilustración digital y Diseño de
+                                redes
+                                sociales.</p>
                         </div>
                     </div>
 
@@ -151,15 +166,13 @@
                         <div class="timeline-card">
                             <p class="timeline-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                Actualmente
+                                2 años | Corporación Universitaria Americana
                             </p>
-                            <h4>Diseñadora Gráfica e Ilustradora Freelance</h4>
-                            <p>Desarrollo de proyectos de diseño gráfico e ilustración para emprendedores y marcas
-                                personales. Especializada en Diseño de logo, Ilustración digital y Diseño de redes
-                                sociales.</p>
+                            <h4>Diseñadora Gráfica Junior</h4>
+                            <p>Diseño de Redes Sociales, Afiche,
+                                Pendones, Banner web, Retoque digital y Medios impresos.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -167,18 +180,106 @@
 
     </section>
 
-    <main>
-        <section id="about"></section>
-        <section id="experiencia"></section>
-        <section id="habilidades-desarrollo"></section>
-        <section id="proyectos"></section>
-        <section id="contacto"></section>
-    </main>
+    <!-- Section de Proyectos -->
+
+    <section id="proyectos" class="proyectos">
+
+        <h2 class="section-title">Proyectos</h2>
+
+        <div class="proyectos-grid">
+
+            <div class="proyectos-card">
+                <img src="img/tiger.png" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Ver proyecto</a>
+                    <a href="#" class="btn">Código de fuente</a>
+                </div>
+            </div>
+
+            <div class="proyectos-card">
+                <img src="img/tiger.png" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto 2.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Ver proyecto</a>
+                    <a href="#" class="btn">Código de fuente</a>
+                </div>
+            </div>
+
+            <div class="proyectos-card">
+                <img src="img/tiger.png" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Descripción breve del proyecto 3.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Ver proyecto</a>
+                    <a href="#" class="btn">Código de fuente</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contacto -->
+
+    <section id="contacto" class="contacto">
+
+        <h2 class="section-title">Contacto</h2>
+
+        <div class="contacto-container">
+
+            <!-- Tarjetas de contacto izquierda -->
+
+            <div class="contacto-info">
+
+                <div class="contacto-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Correo</h3>
+                    <p>marielsa.milagro@gmail.com</p>
+                    <a href="mailto:marielsa.milagro@gmail.com" class="contacto-link">
+                        Escribeme <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="contacto-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+57 322 7111205</p>
+                    <a href="https://wa.me/573227111205" target="_blank" rel="noopener noreferrer"
+                        class="contacto-link">
+                        Escribeme <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Formulario derecha -->
+
+            <div class="contacto-form">
+
+                <input type="text" class="form-input" placeholder="Nombre completo">
+                <input type="email" class="form-input" placeholder="Correo electrónico">
+                <input type="tel" class="form-input" placeholder="Número de teléfono">
+                <textarea class="form-input form-textarea" placeholder="Tu mensaje"></textarea>
+
+                <button class="form-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Enviar mensaje</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer de la página del portafolio personal -->
 
     <footer class="footer">
         <div class="left">
             <a href="/">Marielsa Design</a><br>
-            <span>&copy; 2026. Todos los derechos reservados.</span>
+            <span>&copy; 2026 Marielsa Parra | Todos los derechos reservados.</span>
         </div>
 
         <div class="right">
@@ -195,11 +296,6 @@
             <a href="https://www.behance.net/marielsamilagro" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-behance"></i>
                 <span>Behance</span>
-            </a>
-
-            <a href="mailto:marielsa.milagro@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Correo</span>
             </a>
         </div>
     </footer>

@@ -100,89 +100,158 @@ main {
 
 section {
     min-height: 100vh;
-    padding: 8rem 12%;
     width: 100%;
     position: relative;
 }
 
-.about {
+/* ── Sobre mí ── */
+
+.sobre-mi {
+    padding: 8rem 6rem 5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-mi-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 6rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.about .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10rem;
-}
-
-.about img {
-    width: 30vw;
+.sobre-mi-img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
-info-box {
+.sobre-mi-texto {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    max-width: 500px;
 }
 
-.info-box h2 {
-    font-size: 45px;
-    margin-top: -10px;
-    opacity: 0.8;
+.sobre-mi-saludo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
-.info-box h1 {
-    font-size: 32px;
+.sobre-mi-nombre {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
 }
 
-.info-box span {
-    background-color: var(--text-color);
-    background-clip: text;
-    color: transparent;
-    font-size: 24px;
-    margin: 10px 0 25px;
+.sobre-mi-descripcion {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
 }
 
-.btn-group {
+.sobre-mi-botones {
     display: flex;
     gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
 }
 
-.btn {
+.btn-cv {
+    padding: 0.75rem 1.8rem;
     border-radius: 3rem;
-    padding: 0.5rem 1.5rem;
     border: 2px solid var(--text-color);
-    cursor: pointer;
+    color: var(--text-color);
+    font-size: 0.95rem;
     font-weight: 500;
-    text-wrap: nowrap;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
-.btn:hover {
+.btn-cv:hover {
     background-color: var(--text-color);
     color: var(--background-color);
 }
 
-.socials {
+.btn-contacto {
+    padding: 0.75rem 1.8rem;
+    border-radius: 3rem;
+    border: 2px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-contacto:hover {
+    background-color: #3a3a3a;
+    border-color: #3a3a3a;
+}
+
+.sobre-mi-redes {
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
 }
 
-.socials i {
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+.sobre-mi-redes a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
 }
 
-.socials i:hover {
-    transform: scale(1.1);
+.sobre-mi-redes a:hover {
+    transform: scale(1.15);
+    color: #555;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .sobre-mi {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .sobre-mi-container {
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .sobre-mi-botones {
+        justify-content: center;
+    }
+
+    .sobre-mi-redes {
+        justify-content: center;
+    }
+
+    .sobre-mi-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .sobre-mi-nombre {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre-mi-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sobre-mi-nombre {
+        font-size: 1.8rem;
+    }
 }
 
 /* Section Experiencia */
@@ -333,6 +402,317 @@ info-box {
     }
 }
 
+/* Section Proyectos */
+
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+/* Proyectos */
+
+.proyectos {
+    padding: 5rem 6rem;
+    text-align: center;
+}
+
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.proyectos-card {
+    width: 300px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.proyectos-card:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transform: translateY(-10px) scale(1.02);
+}
+
+.proyectos-card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.proyectos-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.proyectos-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 3rem;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.proyectos-card:hover .btn {
+    border: 2px solid var(--background-color);
+    color: var(--background-color);
+}
+
+.proyectos-card:hover .btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .proyectos {
+        padding: 4rem 2rem;
+    }
+
+    .proyectos-card {
+        width: 260px;
+    }
+}
+
+@media (max-width: 600px) {
+    .proyectos {
+        padding: 3rem 1rem;
+    }
+
+    .proyectos-card {
+        width: 100%;
+    }
+}
+
+/* ── Contacto ── */
+
+.contacto {
+    padding: 5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Tarjetas */
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.contacto-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contacto-card i {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 0.3rem;
+}
+
+.contacto-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.contacto-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contacto-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--link-color);
+    margin-top: 0.4rem;
+    transition: 0.3s ease-in-out;
+}
+
+.contacto-link:hover {
+    gap: 0.8rem;
+}
+
+/* Formulario */
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.form-input:focus {
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 0 3px rgba(26, 28, 32, 0.08);
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 95px;
+    border-radius: 1rem;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.03);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .contacto {
+        padding: 4rem 2rem;
+    }
+
+    .contacto-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contacto {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 3rem;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.proyectos-card:hover .btn {
+    border: 2px solid var(--background-color);
+    color: var(--background-color);
+}
+
+.proyectos-card:hover .btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .proyectos {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .proyectos {
+        padding: 3rem 1rem;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Footer */
 
 .footer {
@@ -347,22 +727,37 @@ info-box {
 
 .footer .left a {
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
-.footer .right a {
-    color: var(--text-color);
-    margin: 0 10px;
+.footer .left span {
+    font-size: 0.85rem;
+    color: #666;
 }
 
-.footer .right a:last-child {
-    color: var(--background-color);
-    background-color: var(--text-color);
-    padding: 5px 15px;
+.footer .right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer .right a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-color);
+    padding: 5px 12px;
     border-radius: 5px;
+    font-size: 0.9rem;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .right a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 .footer .right a span {
-    margin-left: 5px;
+    margin-left: 0;
 }
